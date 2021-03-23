@@ -8,7 +8,7 @@
 #stores a matrix and caches its inverse.
 #This function creates a special "matrix" object that can cache its inverse.
 
-makeCacheMatrix <- function(x = matrix(sample(1:100,9),3,3)) {
+makeCacheMatrix <- function(x = matrix()) {
   s <- NULL
   set <- function(y) {
     x <<- y
